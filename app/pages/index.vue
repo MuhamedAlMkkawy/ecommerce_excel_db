@@ -80,7 +80,7 @@
             <i class="pi pi-dollar text-teal-500 dark:text-teal-400"></i>
           </div>
           <div class="text-2xl sm:text-3xl font-extrabold text-gray-900 dark:text-white">
-            ${{ totalValue.toLocaleString(numberLocale, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) }}
+            ⃁  {{ totalValue.toLocaleString(numberLocale, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) }}
           </div>
           <div class="text-[11px] text-gray-500 dark:text-gray-400 mt-1">{{ $t('dashboard.stats.total_retail') }}</div>
         </div>
@@ -255,7 +255,7 @@
                 <div>
                   <span class="text-[11px] font-semibold text-gray-400 uppercase tracking-wider block">{{ $t('dashboard.product_card.price') }}</span>
                   <span class="font-extrabold text-gray-900 dark:text-white">
-                    ${{ Number(product.price).toFixed(2) }}
+                    ⃁ {{ Number(product.price).toFixed(2) }}
                   </span>
                 </div>
 

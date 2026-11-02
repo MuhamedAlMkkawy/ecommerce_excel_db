@@ -112,13 +112,13 @@
       "new_category": "+ Add New Category...",
       "new_category_label": "Enter New Category Name",
       "new_category_placeholder": "e.g. Smart Home, Gaming...",
-      "price_label": "Price ($)",
+      "price_label": "Price (⃁)",
       "stock_label": "Stock Quantity",
       "active_label": "Active (Ready for Sale)",
       "inactive_label": "Inactive",
       "btn_cancel": "Cancel",
       "btn_submit": "Create Product",
-      "btn_submitting": "Adding to Excel..."
+      "btn_submitting": "Adding ..."
     },
     "edit_modal": {
       "title": "Edit Product #{id}",
@@ -140,9 +140,9 @@
     "toasts": {
       "fetch_failed": "Failed to fetch products",
       "category_required": "Please select or enter a category",
-      "created": "Product added to Excel successfully!",
+      "created": "Product added  successfully!",
       "create_failed": "Failed to create product",
-      "updated": "Product updated in Excel successfully!",
+      "updated": "Product updated  successfully!",
       "update_failed": "Failed to update product",
       "deleted": "Product removed from Excel successfully!",
       "delete_failed": "Failed to delete product"
@@ -171,12 +171,12 @@
     "new_category": "+ Add New Category...",
     "new_category_label": "Enter New Category Name",
     "new_category_placeholder": "e.g. Smart Home, Gaming...",
-    "price_label": "Price ($)",
+    "price_label": "Price (⃁)",
     "stock_label": "Stock Quantity",
     "active_label": "Active Product (Ready for Sale)",
     "inactive_label": "Inactive (Archived)",
     "btn_cancel": "Cancel",
-    "btn_save": "Save to Excel",
+    "btn_save": "Save ",
     "btn_saving": "Saving Changes...",
     "na": "N/A",
     "inventory": {
@@ -218,7 +218,7 @@
     "toasts": {
       "not_found": "Product not found",
       "category_required": "Please select or enter a category",
-      "updated": "Product updated successfully in Excel!",
+      "updated": "Product updated successfully !",
       "update_failed": "Failed to update product",
       "deleted": "Product deleted from Excel",
       "delete_failed": "Failed to delete product"
@@ -228,8 +228,13 @@
     "title": "About Page",
     "home": "Home Page"
   },
-  "empty_component": { "text": "No content Found!" },
-  "error_page": { "title": "Page Not Found", "go_home": "Go To Home Page" },
+  "empty_component": {
+    "text": "No content Found!"
+  },
+  "error_page": {
+    "title": "Page Not Found",
+    "go_home": "Go To Home Page"
+  },
   "validation": {
     "nameRequired": "Name is required",
     "nameMin": "Name must be at least 3 characters",

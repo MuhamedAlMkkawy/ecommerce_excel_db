@@ -123,9 +123,9 @@ export default defineNuxtConfig({
     },
   },
 
-  nitro: {
-    externals: {
-      inline: ['xlsx']
-    }
-  }
+  //   nitro: {
+  //   externals: {
+  //     inline: ['xlsx']
+  //   }
+  // }
 });

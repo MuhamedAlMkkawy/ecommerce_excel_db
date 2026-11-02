@@ -112,7 +112,7 @@
       "new_category": "+ إضافة فئة جديدة...",
       "new_category_label": "أدخل اسم الفئة الجديدة",
       "new_category_placeholder": "مثال: المنزل الذكي، الألعاب...",
-      "price_label": "السعر ($)",
+      "price_label": "السعر (⃁)",
       "stock_label": "كمية المخزون",
       "active_label": "نشط (جاهز للبيع)",
       "inactive_label": "غير نشط",
@@ -142,7 +142,7 @@
       "category_required": "يرجى اختيار أو إدخال فئة",
       "created": "تمت إضافة المنتج إلى Excel بنجاح!",
       "create_failed": "فشل إنشاء المنتج",
-      "updated": "تم تحديث المنتج في Excel بنجاح!",
+      "updated": "تم تحديث المنتج  بنجاح!",
       "update_failed": "فشل تحديث المنتج",
       "deleted": "تم حذف المنتج من Excel بنجاح!",
       "delete_failed": "فشل حذف المنتج"
@@ -171,12 +171,12 @@
     "new_category": "+ إضافة فئة جديدة...",
     "new_category_label": "أدخل اسم الفئة الجديدة",
     "new_category_placeholder": "مثال: المنزل الذكي، الألعاب...",
-    "price_label": "السعر ($)",
+    "price_label": "السعر (⃁)",
     "stock_label": "كمية المخزون",
     "active_label": "منتج نشط (جاهز للبيع)",
     "inactive_label": "غير نشط (مؤرشف)",
     "btn_cancel": "إلغاء",
-    "btn_save": "حفظ في Excel",
+    "btn_save": "حفظ ",
     "btn_saving": "جاري حفظ التغييرات...",
     "na": "غير متوفر",
     "inventory": {
@@ -218,7 +218,7 @@
     "toasts": {
       "not_found": "المنتج غير موجود",
       "category_required": "يرجى اختيار أو إدخال فئة",
-      "updated": "تم تحديث المنتج في Excel بنجاح!",
+      "updated": "تم تحديث المنتج  بنجاح!",
       "update_failed": "فشل تحديث المنتج",
       "deleted": "تم حذف المنتج من Excel",
       "delete_failed": "فشل حذف المنتج"

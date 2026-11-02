@@ -48,7 +48,7 @@ export function readProducts(): Product[] {
     if (!sheet) {
         throw createError({
             statusCode: 500,
-            statusMessage: `Sheet "${sheetName}" not found in Excel file`,
+            statusMessage: `Sheet "${sheetName}" not found  file`,
         })
     }
 
@@ -215,9 +215,9 @@ export function createProduct(payload: {
             payload.active === undefined
                 ? true
                 : payload.active === true ||
-                  payload.active === 'true' ||
-                  payload.active === 1 ||
-                  payload.active === '1',
+                payload.active === 'true' ||
+                payload.active === 1 ||
+                payload.active === '1',
         updatedAt: new Date().toISOString(),
     }
 
