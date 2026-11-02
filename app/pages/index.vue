@@ -13,10 +13,10 @@
           <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-gray-900 dark:text-white">
             {{ $t('dashboard.title') }}
           </h1>
-          <p class="text-gray-500 dark:text-gray-400 text-sm sm:text-base mt-2 max-w-xl">
+          <!-- <p class="text-gray-500 dark:text-gray-400 text-sm sm:text-base mt-2 max-w-xl">
             {{ $t('dashboard.subtitle') }}
             <code class="text-emerald-600 dark:text-emerald-400 bg-black/5 dark:bg-white/5 px-2 py-0.5 rounded font-mono text-xs">data/nuxt-excel-demo.xlsx</code>.
-          </p>
+          </p> -->
         </div>
 
         <div class="flex flex-wrap items-center gap-3">

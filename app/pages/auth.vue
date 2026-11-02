@@ -5,7 +5,7 @@
 
     <div class="absolute top-4 inset-inline-end-4 z-20 flex items-center gap-2">
       <SwitchLanguage />
-      <SwitchTheme />
+      <!-- <SwitchTheme /> -->
     </div>
 
     <div class="relative z-10 w-full max-w-md">
