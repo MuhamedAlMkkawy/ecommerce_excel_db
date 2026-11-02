@@ -1,28 +1,247 @@
 {
-  "empty_component": {
-    "text": "No content Found!"
+  "nav": {
+    "brand": "Products Dashboard",
+    "logout": "Logout"
   },
-  "error_page": {
-    "title": "Page Not Found",
-    "go_home": "Go To Home Page"
+  "theme": {
+    "to_dark": "Switch to dark mode",
+    "to_light": "Switch to light mode"
   },
+  "language": {
+    "switch": "Switch language"
+  },
+  "common": {
+    "success": "Success",
+    "error": "Error",
+    "info": "Info",
+    "warning": "Warning"
+  },
+  "auth": {
+    "title": "Products Dashboard",
+    "subtitle": "Excel-backed data management",
+    "tab_login": "Sign In",
+    "tab_register": "Register",
+    "email": "Email Address",
+    "email_placeholder": "you{'@'}example.com",
+    "password": "Password",
+    "password_placeholder": "••••••••",
+    "confirm_password": "Confirm Password",
+    "show_password": "Show password",
+    "hide_password": "Hide password",
+    "btn_login": "Sign In",
+    "btn_register": "Create Account",
+    "btn_loading": "Please wait...",
+    "switch_to_register": "Don't have an account?",
+    "switch_to_login": "Already have an account?",
+    "register_link": "Register here",
+    "login_link": "Sign in instead",
+    "errors": {
+      "email_required": "Email is required",
+      "email_invalid": "Please enter a valid email",
+      "password_required": "Password is required",
+      "password_min": "Password must be at least 6 characters",
+      "confirm_required": "Please confirm your password",
+      "confirm_mismatch": "Passwords do not match",
+      "generic": "Something went wrong. Please try again."
+    }
+  },
+  "dashboard": {
+    "badge": "Excel-Backed Live Database",
+    "title": "Products Dashboard",
+    "subtitle": "Manage your catalog with instant two-way synchronization to",
+    "btn_refresh": "Refresh",
+    "btn_refresh_title": "Refresh from Excel",
+    "btn_add": "Add New Product",
+    "stats": {
+      "total_products": "Total Products",
+      "across_categories": "Across {n} categories",
+      "active_items": "Active Items",
+      "inactive": "{n} inactive / archived",
+      "total_stock": "Total Stock",
+      "out_of_stock": "{n} out of stock",
+      "inventory_value": "Inventory Value",
+      "total_retail": "Total retail value"
+    },
+    "filters": {
+      "title": "Filters & Sort",
+      "reset": "Reset",
+      "reset_title": "Reset all filters",
+      "search_label": "Search",
+      "search_placeholder": "Search products...",
+      "clear_search": "Clear search",
+      "category_label": "Category",
+      "category_all": "All Categories ({n})",
+      "status_label": "Status",
+      "status_all": "All Statuses",
+      "status_active": "Active Only",
+      "status_inactive": "Inactive Only",
+      "sort_label": "Sort By",
+      "sort_id": "ID (Default)",
+      "sort_name": "Name (A-Z)",
+      "sort_price_asc": "Price (Low → High)",
+      "sort_price_desc": "Price (High → Low)",
+      "sort_stock": "Stock (Highest)",
+      "active_filters": "Active filters:",
+      "showing": "Showing",
+      "of": "of",
+      "products": "products"
+    },
+    "empty": {
+      "loading": "Fetching products from Excel...",
+      "no_results": "No products found",
+      "no_results_sub": "No items match your search or filter criteria.",
+      "clear_filters": "Clear Filters"
+    },
+    "product_card": {
+      "active": "● Active",
+      "inactive": "○ Inactive",
+      "price": "Price",
+      "stock": "Stock",
+      "units": "units",
+      "details": "Details",
+      "edit": "Edit Product",
+      "delete": "Delete Product"
+    },
+    "add_modal": {
+      "title": "Add New Product",
+      "subtitle": "Appends a new row to data/nuxt-excel-demo.xlsx",
+      "name_label": "Product Name",
+      "name_placeholder": "e.g. 4K Ultra Webcam",
+      "category_label": "Category",
+      "category_placeholder": "-- Select Category or Add New --",
+      "new_category": "+ Add New Category...",
+      "new_category_label": "Enter New Category Name",
+      "new_category_placeholder": "e.g. Smart Home, Gaming...",
+      "price_label": "Price ($)",
+      "stock_label": "Stock Quantity",
+      "active_label": "Active (Ready for Sale)",
+      "inactive_label": "Inactive",
+      "btn_cancel": "Cancel",
+      "btn_submit": "Create Product",
+      "btn_submitting": "Adding to Excel..."
+    },
+    "edit_modal": {
+      "title": "Edit Product #{id}",
+      "subtitle": "Updates Excel row in real-time",
+      "active_label": "Active Product",
+      "inactive_label": "Inactive",
+      "btn_cancel": "Cancel",
+      "btn_submit": "Update Product",
+      "btn_submitting": "Saving..."
+    },
+    "delete_modal": {
+      "title": "Delete Product",
+      "message": "Are you sure you want to delete",
+      "message_suffix": "? This change will immediately be saved to the Excel file.",
+      "btn_cancel": "Cancel",
+      "btn_confirm": "Confirm Delete",
+      "btn_deleting": "Deleting..."
+    },
+    "toasts": {
+      "fetch_failed": "Failed to fetch products",
+      "category_required": "Please select or enter a category",
+      "created": "Product added to Excel successfully!",
+      "create_failed": "Failed to create product",
+      "updated": "Product updated in Excel successfully!",
+      "update_failed": "Failed to update product",
+      "deleted": "Product removed from Excel successfully!",
+      "delete_failed": "Failed to delete product"
+    }
+  },
+  "product_detail": {
+    "back": "Back to Products",
+    "edit_product": "Edit Product",
+    "cancel_edit": "Cancel Edit",
+    "delete": "Delete",
+    "loading": "Loading product details from Excel...",
+    "not_found": "Product Not Found",
+    "not_found_sub": "The requested product could not be found in the Excel database.",
+    "return": "Return to Products",
+    "product_id": "Product #{id}",
+    "active": "● Active",
+    "inactive": "○ Inactive",
+    "category": "Category:",
+    "price": "Price",
+    "edit_title": "Edit Product Data",
+    "edit_subtitle": "Saves directly into data/nuxt-excel-demo.xlsx",
+    "name_label": "Product Name",
+    "name_placeholder": "e.g. Wireless Mouse",
+    "category_label": "Category",
+    "category_placeholder": "-- Select Category or Add New --",
+    "new_category": "+ Add New Category...",
+    "new_category_label": "Enter New Category Name",
+    "new_category_placeholder": "e.g. Smart Home, Gaming...",
+    "price_label": "Price ($)",
+    "stock_label": "Stock Quantity",
+    "active_label": "Active Product (Ready for Sale)",
+    "inactive_label": "Inactive (Archived)",
+    "btn_cancel": "Cancel",
+    "btn_save": "Save to Excel",
+    "btn_saving": "Saving Changes...",
+    "na": "N/A",
+    "inventory": {
+      "title": "Inventory Status",
+      "subtitle": "Units in stock",
+      "available": "Available Stock:",
+      "units": "units",
+      "status": "Stock Status:",
+      "total_value": "Total Value:",
+      "in_stock": "In Stock",
+      "low_stock": "Low Stock",
+      "out_of_stock": "Out of Stock"
+    },
+    "classification": {
+      "title": "Classification",
+      "subtitle": "Department & Category",
+      "category": "Category:",
+      "id": "Unique ID:",
+      "visibility": "Visibility:",
+      "published": "Published",
+      "hidden": "Hidden"
+    },
+    "excel_info": {
+      "title": "Excel Sync Info",
+      "subtitle": "Storage & Timestamps",
+      "file": "Target File:",
+      "sheet": "Sheet:",
+      "sheet_name": "Products",
+      "modified": "Last Modified:"
+    },
+    "delete_modal": {
+      "title": "Delete Product",
+      "message": "Are you sure you want to permanently delete",
+      "message_suffix": "? This action will immediately remove the row from the Excel file.",
+      "btn_cancel": "Cancel",
+      "btn_confirm": "Confirm Delete",
+      "btn_deleting": "Deleting..."
+    },
+    "toasts": {
+      "not_found": "Product not found",
+      "category_required": "Please select or enter a category",
+      "updated": "Product updated successfully in Excel!",
+      "update_failed": "Failed to update product",
+      "deleted": "Product deleted from Excel",
+      "delete_failed": "Failed to delete product"
+    }
+  },
+  "about": {
+    "title": "About Page",
+    "home": "Home Page"
+  },
+  "empty_component": { "text": "No content Found!" },
+  "error_page": { "title": "Page Not Found", "go_home": "Go To Home Page" },
   "validation": {
     "nameRequired": "Name is required",
     "nameMin": "Name must be at least 3 characters",
     "nameMax": "Name must not exceed 30 characters",
-
     "countryRequired": "Please select a country",
-
     "promotionRequired": "Please select a promotion date",
-
     "holidaysRequired": "Please select a holiday period",
     "holidaysDateRequired": "Please select a valid date",
     "holidaysMin": "Please select a start and end date",
-
     "messageRequired": "Message is required",
     "messageMin": "Message must be at least 10 characters",
     "messageMax": "Message must not exceed 500 characters",
-
     "countriesRequired": "Please select at least one country"
   }
 }

@@ -1,6 +1,10 @@
 <template>
-  <div class="flex flex-col items-center justify-center min-h-screen bg-[#000] relative text-center px-4">
-    
+  <div class="flex flex-col items-center justify-center min-h-screen bg-gray-50 text-gray-900 dark:bg-[#000] dark:text-white relative text-center px-4">
+    <div class="absolute top-4 inset-inline-end-4 z-20 flex items-center gap-2">
+      <SwitchLanguage />
+      <SwitchTheme />
+    </div>
+
     <!-- Logo -->
     <div class="w-[400px] mb-[25px] mx-auto">
       <img
@@ -12,7 +16,7 @@
     </div>
 
     <!-- 404 -->
-    <h1 class="flex items-center gap-5 text-[150px] text-[#fff] leading-none">
+    <h1 class="flex items-center gap-5 text-[150px] text-gray-900 dark:text-[#fff] leading-none">
       4
       <FeaturesNotFoundEyes />
       4

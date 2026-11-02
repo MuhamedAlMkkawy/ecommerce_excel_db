@@ -40,10 +40,13 @@
 }
 
 /* xxl */
-@media (min-width: 1400px) {
+@media (min-width: 1500px) {
   .page {
-    max-width: 1320px;
+    max-width: 95%;
   }
 }
 
 
+.p-toast-message{
+  padding: 10px 15px !important;
+}

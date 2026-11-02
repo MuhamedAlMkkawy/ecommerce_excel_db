@@ -1,6 +1,235 @@
 {
+  "nav": {
+    "brand": "لوحة المنتجات",
+    "logout": "تسجيل الخروج"
+  },
+  "theme": {
+    "to_dark": "التبديل إلى الوضع الداكن",
+    "to_light": "التبديل إلى الوضع الفاتح"
+  },
+  "language": {
+    "switch": "تغيير اللغة"
+  },
+  "common": {
+    "success": "نجاح",
+    "error": "خطأ",
+    "info": "معلومة",
+    "warning": "تحذير"
+  },
+  "auth": {
+    "title": "لوحة المنتجات",
+    "subtitle": "إدارة البيانات عبر ملفات Excel",
+    "tab_login": "تسجيل الدخول",
+    "tab_register": "إنشاء حساب",
+    "email": "البريد الإلكتروني",
+    "email_placeholder": "you{'@'}example.com",
+    "password": "كلمة المرور",
+    "password_placeholder": "••••••••",
+    "confirm_password": "تأكيد كلمة المرور",
+    "show_password": "إظهار كلمة المرور",
+    "hide_password": "إخفاء كلمة المرور",
+    "btn_login": "تسجيل الدخول",
+    "btn_register": "إنشاء حساب",
+    "btn_loading": "يرجى الانتظار...",
+    "switch_to_register": "ليس لديك حساب؟",
+    "switch_to_login": "لديك حساب بالفعل؟",
+    "register_link": "سجّل من هنا",
+    "login_link": "سجّل الدخول بدلاً من ذلك",
+    "errors": {
+      "email_required": "البريد الإلكتروني مطلوب",
+      "email_invalid": "يرجى إدخال بريد إلكتروني صالح",
+      "password_required": "كلمة المرور مطلوبة",
+      "password_min": "يجب ألا تقل كلمة المرور عن 6 أحرف",
+      "confirm_required": "يرجى تأكيد كلمة المرور",
+      "confirm_mismatch": "كلمتا المرور غير متطابقتين",
+      "generic": "حدث خطأ ما. يرجى المحاولة مرة أخرى."
+    }
+  },
+  "dashboard": {
+    "badge": "قاعدة بيانات مباشرة عبر Excel",
+    "title": "لوحة المنتجات",
+    "subtitle": "أدِر كتالوجك مع مزامنة فورية ثنائية الاتجاه مع",
+    "btn_refresh": "تحديث",
+    "btn_refresh_title": "تحديث من Excel",
+    "btn_add": "إضافة منتج جديد",
+    "stats": {
+      "total_products": "إجمالي المنتجات",
+      "across_categories": "عبر {n} فئات",
+      "active_items": "العناصر النشطة",
+      "inactive": "{n} غير نشط / مؤرشف",
+      "total_stock": "إجمالي المخزون",
+      "out_of_stock": "{n} نفد من المخزون",
+      "inventory_value": "قيمة المخزون",
+      "total_retail": "إجمالي القيمة البيعية"
+    },
+    "filters": {
+      "title": "التصفية والترتيب",
+      "reset": "إعادة تعيين",
+      "reset_title": "إعادة تعيين كل عوامل التصفية",
+      "search_label": "بحث",
+      "search_placeholder": "ابحث عن المنتجات...",
+      "clear_search": "مسح البحث",
+      "category_label": "الفئة",
+      "category_all": "كل الفئات ({n})",
+      "status_label": "الحالة",
+      "status_all": "كل الحالات",
+      "status_active": "النشطة فقط",
+      "status_inactive": "غير النشطة فقط",
+      "sort_label": "ترتيب حسب",
+      "sort_id": "المعرف (افتراضي)",
+      "sort_name": "الاسم (أ-ي)",
+      "sort_price_asc": "السعر (من الأقل إلى الأعلى)",
+      "sort_price_desc": "السعر (من الأعلى إلى الأقل)",
+      "sort_stock": "المخزون (الأعلى)",
+      "active_filters": "عوامل التصفية النشطة:",
+      "showing": "عرض",
+      "of": "من",
+      "products": "منتجات"
+    },
+    "empty": {
+      "loading": "جاري جلب المنتجات من Excel...",
+      "no_results": "لا توجد منتجات",
+      "no_results_sub": "لا توجد عناصر تطابق معايير البحث أو التصفية.",
+      "clear_filters": "مسح عوامل التصفية"
+    },
+    "product_card": {
+      "active": "● نشط",
+      "inactive": "○ غير نشط",
+      "price": "السعر",
+      "stock": "المخزون",
+      "units": "وحدة",
+      "details": "التفاصيل",
+      "edit": "تعديل المنتج",
+      "delete": "حذف المنتج"
+    },
+    "add_modal": {
+      "title": "إضافة منتج جديد",
+      "subtitle": "يضيف صفًا جديدًا إلى data/nuxt-excel-demo.xlsx",
+      "name_label": "اسم المنتج",
+      "name_placeholder": "مثال: كاميرا 4K",
+      "category_label": "الفئة",
+      "category_placeholder": "-- اختر فئة أو أضف جديدة --",
+      "new_category": "+ إضافة فئة جديدة...",
+      "new_category_label": "أدخل اسم الفئة الجديدة",
+      "new_category_placeholder": "مثال: المنزل الذكي، الألعاب...",
+      "price_label": "السعر ($)",
+      "stock_label": "كمية المخزون",
+      "active_label": "نشط (جاهز للبيع)",
+      "inactive_label": "غير نشط",
+      "btn_cancel": "إلغاء",
+      "btn_submit": "إنشاء المنتج",
+      "btn_submitting": "جاري الإضافة إلى Excel..."
+    },
+    "edit_modal": {
+      "title": "تعديل المنتج #{id}",
+      "subtitle": "يحدّث صف Excel في الوقت الفعلي",
+      "active_label": "منتج نشط",
+      "inactive_label": "غير نشط",
+      "btn_cancel": "إلغاء",
+      "btn_submit": "تحديث المنتج",
+      "btn_submitting": "جاري الحفظ..."
+    },
+    "delete_modal": {
+      "title": "حذف المنتج",
+      "message": "هل أنت متأكد أنك تريد حذف",
+      "message_suffix": "؟ سيتم حفظ هذا التغيير فورًا في ملف Excel.",
+      "btn_cancel": "إلغاء",
+      "btn_confirm": "تأكيد الحذف",
+      "btn_deleting": "جاري الحذف..."
+    },
+    "toasts": {
+      "fetch_failed": "فشل جلب المنتجات",
+      "category_required": "يرجى اختيار أو إدخال فئة",
+      "created": "تمت إضافة المنتج إلى Excel بنجاح!",
+      "create_failed": "فشل إنشاء المنتج",
+      "updated": "تم تحديث المنتج في Excel بنجاح!",
+      "update_failed": "فشل تحديث المنتج",
+      "deleted": "تم حذف المنتج من Excel بنجاح!",
+      "delete_failed": "فشل حذف المنتج"
+    }
+  },
+  "product_detail": {
+    "back": "العودة إلى المنتجات",
+    "edit_product": "تعديل المنتج",
+    "cancel_edit": "إلغاء التعديل",
+    "delete": "حذف",
+    "loading": "جاري تحميل تفاصيل المنتج من Excel...",
+    "not_found": "المنتج غير موجود",
+    "not_found_sub": "تعذر العثور على المنتج المطلوب في قاعدة بيانات Excel.",
+    "return": "العودة إلى المنتجات",
+    "product_id": "المنتج #{id}",
+    "active": "● نشط",
+    "inactive": "○ غير نشط",
+    "category": "الفئة:",
+    "price": "السعر",
+    "edit_title": "تعديل بيانات المنتج",
+    "edit_subtitle": "يُحفظ مباشرة في data/nuxt-excel-demo.xlsx",
+    "name_label": "اسم المنتج",
+    "name_placeholder": "مثال: فأرة لاسلكية",
+    "category_label": "الفئة",
+    "category_placeholder": "-- اختر فئة أو أضف جديدة --",
+    "new_category": "+ إضافة فئة جديدة...",
+    "new_category_label": "أدخل اسم الفئة الجديدة",
+    "new_category_placeholder": "مثال: المنزل الذكي، الألعاب...",
+    "price_label": "السعر ($)",
+    "stock_label": "كمية المخزون",
+    "active_label": "منتج نشط (جاهز للبيع)",
+    "inactive_label": "غير نشط (مؤرشف)",
+    "btn_cancel": "إلغاء",
+    "btn_save": "حفظ في Excel",
+    "btn_saving": "جاري حفظ التغييرات...",
+    "na": "غير متوفر",
+    "inventory": {
+      "title": "حالة المخزون",
+      "subtitle": "الوحدات المتوفرة",
+      "available": "المخزون المتاح:",
+      "units": "وحدة",
+      "status": "حالة المخزون:",
+      "total_value": "القيمة الإجمالية:",
+      "in_stock": "متوفر",
+      "low_stock": "مخزون منخفض",
+      "out_of_stock": "نفد المخزون"
+    },
+    "classification": {
+      "title": "التصنيف",
+      "subtitle": "القسم والفئة",
+      "category": "الفئة:",
+      "id": "المعرف الفريد:",
+      "visibility": "الظهور:",
+      "published": "منشور",
+      "hidden": "مخفي"
+    },
+    "excel_info": {
+      "title": "معلومات مزامنة Excel",
+      "subtitle": "التخزين والأوقات",
+      "file": "الملف المستهدف:",
+      "sheet": "الورقة:",
+      "sheet_name": "المنتجات",
+      "modified": "آخر تعديل:"
+    },
+    "delete_modal": {
+      "title": "حذف المنتج",
+      "message": "هل أنت متأكد أنك تريد حذف",
+      "message_suffix": " نهائيًا؟ سيتم إزالة الصف فورًا من ملف Excel.",
+      "btn_cancel": "إلغاء",
+      "btn_confirm": "تأكيد الحذف",
+      "btn_deleting": "جاري الحذف..."
+    },
+    "toasts": {
+      "not_found": "المنتج غير موجود",
+      "category_required": "يرجى اختيار أو إدخال فئة",
+      "updated": "تم تحديث المنتج في Excel بنجاح!",
+      "update_failed": "فشل تحديث المنتج",
+      "deleted": "تم حذف المنتج من Excel",
+      "delete_failed": "فشل حذف المنتج"
+    }
+  },
+  "about": {
+    "title": "صفحة من نحن",
+    "home": "الصفحة الرئيسية"
+  },
   "empty_component": {
-    "text": "لا يوجد محتوي"
+    "text": "لا يوجد محتوى"
   },
   "error_page": {
     "title": "الصفحة غير موجودة",
@@ -10,20 +239,14 @@
     "nameRequired": "الاسم مطلوب",
     "nameMin": "يجب ألا يقل الاسم عن 3 أحرف",
     "nameMax": "يجب ألا يزيد الاسم عن 30 حرفًا",
-
     "countryRequired": "يرجى اختيار الدولة",
-
     "promotionRequired": "يرجى اختيار تاريخ العرض",
-
     "holidaysRequired": "يرجى اختيار فترة الإجازة",
     "holidaysDateRequired": "يرجى اختيار تاريخ صالح",
     "holidaysMin": "يرجى اختيار تاريخ البداية والنهاية",
-
     "messageRequired": "الرسالة مطلوبة",
     "messageMin": "يجب ألا تقل الرسالة عن 10 أحرف",
     "messageMax": "يجب ألا تزيد الرسالة عن 500 حرف",
-
-    
     "countriesRequired": "يرجى اختيار دولة واحدة على الأقل"
   }
 }

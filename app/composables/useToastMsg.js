@@ -1,33 +1,27 @@
 import { useToast } from 'primevue/usetoast';
-import { useGlobalStore } from '../stores/globalStore';
+
 export function useToastMsg() {
   const toast = useToast();
-
-  const globalStore = useGlobalStore()
-
+  const { t } = useI18n();
 
   const showToast = (severity, summary, detail, life = 2000) => {
     toast.add({ severity, summary, detail, life });
   };
 
   const showErrorToast = (message) => {
-    const summary = globalStore?.lang == 'ar' ? 'حدث خطأ' : 'Error';
-    showToast('error', summary, message);
+    showToast('error', t('common.error'), message);
   };
 
   const showSuccessToast = (message) => {
-    const summary = globalStore?.lang == 'ar' ? 'تمت بـنجاح' : 'Success';
-    showToast('success', summary, message);
+    showToast('success', t('common.success'), message);
   };
 
   const showInfoToast = (message) => {
-    const summary = globalStore?.lang == 'ar' ? 'معلومة' : 'Info';
-    showToast('info', summary, message);
+    showToast('info', t('common.info'), message);
   };
 
   const showWarnToast = (message) => {
-    const summary = globalStore?.lang == 'ar' ? 'تحذير' : 'Warning';
-    showToast('warn', summary, message);
+    showToast('warn', t('common.warning'), message);
   };
 
   return {

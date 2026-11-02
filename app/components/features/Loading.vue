@@ -1,6 +1,6 @@
 <template>
   <div
-    class="fixed inset-0 z-[99999] flex items-center justify-center bg-white/70 backdrop-blur-[10px]"
+    class="fixed inset-0 z-[99999] flex items-center justify-center bg-white/70 dark:bg-gray-950/70 backdrop-blur-[10px]"
   >
     <img
       src="/assets/images/logo.gif"

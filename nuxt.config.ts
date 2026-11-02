@@ -6,17 +6,12 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   serverDir: "app/server",
 
-  runtimeConfig: {
-    public: {
-      // apiBase: "http://127.0.0.1:3000/api/",
-      // secretKey : "9e810ce4d7b9e83d7aaf208b3ecfd0488d6a1e5c67a6a72f384a1d3bcb40c012"
-    },
-  },
-  // const config = useRuntimeConfig()
+  // runtimeConfig: {
+  //   public: {
+  //   },
+  // },
 
-  // console.log(config.public.apiBase)
-
-  ssr: false,
+  ssr: true,
 
   app: {
     pageTransition: {
@@ -32,6 +27,12 @@ export default defineNuxtConfig({
         { name: "description", content: "Website Name" },
       ],
       link: [{ rel: "icon", type: "image/x-icon", href: "/logo.ico" }],
+      script: [
+        {
+          innerHTML:
+            "(function(){try{var t=localStorage.getItem('theme');var d=t?t==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;document.documentElement.classList.toggle('dark',d);document.documentElement.setAttribute('data-theme',d?'dark':'light');}catch(e){}})();",
+        },
+      ],
     },
   },
 

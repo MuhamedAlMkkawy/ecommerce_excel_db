@@ -46,6 +46,10 @@ form {
       color: #374151;
       margin-bottom: 6px;
 
+      html.dark & {
+        color: #d1d5db;
+      }
+
       span {
         color: $secColor;
         font-size: 12px;
@@ -79,6 +83,11 @@ form {
   background: $whiteColor;
   position: relative;
   transition: all 0.25s ease-in-out;
+
+  html.dark & {
+    background: #111827;
+    border-color: #374151;
+  }
 
   @extend %flex-center;
   gap: 8px;
@@ -123,6 +132,10 @@ form {
     &::placeholder {
       color: #9ca3af !important;
     }
+
+    html.dark & {
+      color: #f9fafb;
+    }
   }
 
   /* Textarea inside .input */
@@ -144,6 +157,11 @@ form {
       background: $whiteColor;
       color: $textColor;
       padding: 8px;
+    }
+
+    html.dark & option {
+      background: #111827;
+      color: #f9fafb;
     }
   }
 

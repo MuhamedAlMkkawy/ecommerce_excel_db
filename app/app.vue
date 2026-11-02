@@ -9,11 +9,24 @@
 <script setup>
   import Toast from "primevue/toast";
 
-  // import the locales from i18n to handle the direction based on the lang used
   const { locale } = useI18n();
   const currentDir = computed(() => (locale.value === "ar" ? "rtl" : "ltr"));
+  const globalStore = useGlobalStore();
 
   const { loading } = useApiMethods();
+  const { initTheme } = useTheme();
+
+  watch(
+    locale,
+    (value) => {
+      globalStore.setLang(value);
+    },
+    { immediate: true }
+  );
+
+  onMounted(() => {
+    initTheme();
+  });
 
   useHead({
     htmlAttrs: {

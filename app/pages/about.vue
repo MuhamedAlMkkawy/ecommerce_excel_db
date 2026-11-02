@@ -1,7 +1,7 @@
 <template>
-  <section>
-    <h1>Hello in About Page</h1>
-    <MainButton label="Home Page" path="/" />
+  <section class="text-gray-900 dark:text-gray-100">
+    <h1>{{ $t('about.title') }}</h1>
+    <MainButton :label="$t('about.home')" path="/" />
   </section>
 </template>
 

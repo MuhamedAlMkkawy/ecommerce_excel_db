@@ -6,13 +6,21 @@ export const useAuthStore = defineStore(
   () => {
     const user = ref(null);
 
+    const isLoggedIn = computed(() => !!user.value);
+
     const handleUserData = (newUser) => {
       user.value = newUser;
     };
 
+    const logout = () => {
+      user.value = null;
+    };
+
     return {
       user,
+      isLoggedIn,
       handleUserData,
+      logout,
     };
   },
   {
