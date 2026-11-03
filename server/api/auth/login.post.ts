@@ -10,7 +10,8 @@ export default defineEventHandler(async (event) => {
     throw createError({ statusCode: 400, statusMessage: 'Email and password are required' })
   }
 
-  const user = findUserByEmail(email)
+  const user = await findUserByEmail(email)
+
 
   // Use constant-time comparison to prevent timing attacks
   if (!user || !verifyPassword(password, user.password)) {

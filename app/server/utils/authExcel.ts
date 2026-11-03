@@ -1,11 +1,11 @@
 import { createRequire } from 'node:module'
+const require = createRequire(import.meta.url)
+const XLSX = require('xlsx')
 import { resolve } from 'node:path'
 import process from 'node:process'
 import fs from 'node:fs'
 import { scryptSync, randomBytes, timingSafeEqual } from 'node:crypto'
 
-const require = createRequire(import.meta.url)
-const XLSX = require('xlsx')
 
 // ── Password hashing helpers (Node crypto / scrypt) ──────────────────────────
 

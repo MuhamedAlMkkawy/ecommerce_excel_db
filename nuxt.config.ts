@@ -123,9 +123,16 @@ export default defineNuxtConfig({
     },
   },
 
-  //   nitro: {
-  //   externals: {
-  //     inline: ['xlsx']
-  //   }
-  // }
+  nitro: {
+    externals: {
+      inline: ['xlsx']
+    },
+
+    serverAssets: [
+      {
+        baseName: 'excel-data',
+        dir: './data'
+      }
+    ]
+  }
 });

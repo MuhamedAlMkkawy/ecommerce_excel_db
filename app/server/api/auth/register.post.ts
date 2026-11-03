@@ -20,8 +20,9 @@ export default defineEventHandler(async (event) => {
     throw createError({ statusCode: 400, statusMessage: 'Password must be at least 6 characters' })
   }
 
-  const user = createUser(email, password)
+  const user = await createUser(email, password)
 
+  
   return {
     success: true,
     user: {
